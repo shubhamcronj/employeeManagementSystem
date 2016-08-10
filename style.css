@@ -24,3 +24,7 @@ h1{
 #emp_block{
 	display: none;
 }
+#display{
+	float: left;
+	text-align: left;
+}
