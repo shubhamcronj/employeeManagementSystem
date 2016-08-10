@@ -19,5 +19,8 @@ h1{
 #uname{
 }
 #ereg{
-	visibility: hidden;
+	display: none;
+}
+#emp_block{
+	display: none;
 }

@@ -44,21 +44,33 @@ var validatePass = function(){
 }
 
 var validate = function(){
-    console.log("OK");
 	var uname = document.getElementById('uname');
 	var upass = document.getElementById('upass');
 	if(uname.value == hrUserId && upass.value == hrPass)
 	{
 		document.getElementById('greet').innerHTML = "HI " + uname.value;
-		document.getElementById('ereg').style.visibility="visible";
+		document.getElementById('ereg').style.display="block";
 		return false;
 	}
+
+	else if(true){
+		for(i=0;i<emArr.length;i++)
+		{	
+			document.getElementById('ereg').style.display="none";
+			if(uname.value == emArr[i].eid && upass.value == emArr[i].epass)
+			{
+			document.getElementById('greet').innerHTML = "HI " + emArr[i].first;
+			}
+		}
+		return false;
+	}
+
 	else
 	{
 		document.getElementById('greet').innerHTML = "Wrong! Credentials";
 		uname.style.borderColor="red";
 		upass.style.borderColor="red";
-		document.getElementById('ereg').style.visibility="hidden";
+		document.getElementById('ereg').style.display="none";
 		return false;
 	}
 }
@@ -80,5 +92,3 @@ var registerUser = function(){
 	element.appendChild(para);
 	return false;
 }
-
-
