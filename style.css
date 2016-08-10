@@ -1,0 +1,23 @@
+body{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+header{
+	margin: 0;
+	padding: 0;
+	background: black;
+	color: white;
+	text-align: center;
+}
+h1{
+	margin: 0;
+}
+#form{
+	margin-top: 20px;
+}
+#uname{
+}
+#ereg{
+	visibility: hidden;
+}

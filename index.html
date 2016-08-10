@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Employee Mangement System</title>	
+   <link rel="stylesheet" type="text/css" href="style.css">
+   <script type="text/javascript" src="main.js"></script>
+ </head>
+<body>
+  <header><h1>Employee Management System</h1></header>
+  <form id="form"  onsubmit="return validate();">
+  	<label>Username :</label><input type="text" name="username" id="uname" onblur="validateUser()" /><span id="errorun"></span>
+  	<br /><br />
+  	<label>Password :</label><input type="password" name="password"  id="upass" onblur="validatePass()" /><span id="errorpass"></span>
+  	<br /><br />
+  	<input type="submit" value="Submit" />
+  	<h4 id="greet"></h4>
+  </form>
+  <div id="hr">
+  <div id="ereg">
+  <h2>Register an Employee</h2>
+  <form onsubmit="return registerUser();">
+  <input id ="first" type="text" name="first" />
+  <input id ="last" type="text" name="last" />
+  <input id ="age" type="text" name="age" />
+  <input id="eid" type="text" name="eid" />
+  <input id="epass" type="text" name="epass" />
+  <br>
+  <input type="submit" name="" value="Register">
+  </form>
+  <div id="display">
+  <h2>Registered Employees</h2>
+  </div>
+  </div>
+  </div>
+</body>
+</html>
